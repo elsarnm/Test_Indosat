@@ -1,0 +1,1746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.0 on darwin)" generated="2024-03-25T02:48:16.351540" rpa="false" schemaversion="5">
+<suite id="s1" name="Journeytopayment" source="/Users/queenels/PycharmProjects/Test_Indosat/Payment_Journey_Robot_Automation/testsuites/functionaltest/journeytopayment.robot">
+<test id="s1-t1" name="TC01. Verify product categories on the home page are shown clearly" line="52">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-03-25T02:48:16.670681" elapsed="0.000670"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-03-25T02:48:16.672048" elapsed="0.001966"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-25T02:48:16.674966" level="INFO">Starting the test case!</msg>
+<arg>Starting the test case!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-25T02:48:16.674599" elapsed="0.000519"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:48:16.676091" level="INFO">Opening browser 'chrome' to base url 'https://www.happydayshopping.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-25T02:48:16.675607" elapsed="14.094673"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-25T02:48:30.773720" elapsed="0.514728"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${CATEGORY1}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-03-25T02:48:31.288971" elapsed="1.435330"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T02:48:37.726028" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T02:48:32.724718" elapsed="5.001509"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-25T02:48:37.727015" elapsed="0.363272"/>
+</kw>
+<doc>User can view the main page and see categories of products</doc>
+<tag>Positive Test Case</tag>
+<status status="PASS" start="2024-03-25T02:48:16.667150" elapsed="21.423846"/>
+</test>
+<test id="s1-t2" name="TC02. Make sure that items are categorized or not by the category name" line="72">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-03-25T02:48:38.100999" elapsed="0.000722"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-03-25T02:48:38.102617" elapsed="0.000599"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-25T02:48:38.105358" level="INFO">Starting the test case!</msg>
+<arg>Starting the test case!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-25T02:48:38.104989" elapsed="0.000485"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:48:38.106883" level="INFO">Opening browser 'chrome' to base url 'https://www.happydayshopping.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-25T02:48:38.106145" elapsed="3.767459"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-25T02:48:41.874614" elapsed="6.687901"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:48:48.563573" level="INFO">Simulating Mouse Over on element 'class:ins-header__menu-link-icon'.</msg>
+<arg>${CATEGORY2}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2024-03-25T02:48:48.562935" elapsed="5.709827"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T02:48:57.274006" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T02:48:54.273490" elapsed="3.000654"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:48:57.274992" level="INFO">Clicking element 'xpath://a[contains(text(),'Flash Sale')]'.</msg>
+<msg time="2024-03-25T02:48:58.799361" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-80.png"&gt;&lt;img src="selenium-screenshot-80.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-25T02:48:58.799654" level="FAIL">Element with locator 'xpath://a[contains(text(),'Flash Sale')]' not found.</msg>
+<arg>${FLASHSALE2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-03-25T02:48:57.274603" elapsed="1.533802">Element with locator 'xpath://a[contains(text(),'Flash Sale')]' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-25T02:48:58.808880" elapsed="0.000090"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${PRODUCT2}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" start="2024-03-25T02:48:58.809399" elapsed="0.000079"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-25T02:48:58.810091" elapsed="0.000119"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-03-25T02:48:58.810598" elapsed="0.000104"/>
+</kw>
+<doc>User can view products on the category</doc>
+<tag>Positive Test Case</tag>
+<status status="FAIL" start="2024-03-25T02:48:38.093441" elapsed="20.717806">Element with locator 'xpath://a[contains(text(),'Flash Sale')]' not found.</status>
+</test>
+<test id="s1-t3" name="TC03. Confirm the user-selected product detail page opens as the user clicks on the image or name of the product" line="96">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:48:58.813610" level="FAIL">ValueError: Argument 'value' got value '.2sCli' that cannot be converted to timedelta: Invalid time string '.2sCli'.</msg>
+<arg>.2sCli</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="FAIL" start="2024-03-25T02:48:58.813097" elapsed="0.000842">ValueError: Argument 'value' got value '.2sCli' that cannot be converted to timedelta: Invalid time string '.2sCli'.</status>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="NOT RUN" start="2024-03-25T02:48:58.814397" elapsed="0.000087"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Starting the test case!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-03-25T02:48:58.815056" elapsed="0.000108"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:48:58.815657" elapsed="0.000102"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2024-03-25T02:48:58.816152" elapsed="0.000085"/>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<arg>${FLASHSALE1}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:48:58.816605" elapsed="0.000075"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-25T02:48:58.817005" elapsed="0.001307"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${PRODUCT3}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" start="2024-03-25T02:48:58.818789" elapsed="0.000099"/>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<arg>${PRODUCT4}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:48:58.819553" elapsed="0.000107"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>4800417008219</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:48:58.820339" elapsed="0.000093"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-25T02:48:58.820850" elapsed="0.000088"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-03-25T02:48:58.821279" elapsed="0.000073"/>
+</kw>
+<doc>User can view details of the product when their click the name or the image of it</doc>
+<tag>Positive Test Case</tag>
+<status status="FAIL" start="2024-03-25T02:48:58.811897" elapsed="0.009874">ValueError: Argument 'value' got value '.2sCli' that cannot be converted to timedelta: Invalid time string '.2sCli'.</status>
+</test>
+<test id="s1-t4" name="TC04. Check the correct price of the product should be displayed on the product detail page" line="120">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-03-25T02:48:58.825538" elapsed="0.000914"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-03-25T02:48:58.826961" elapsed="0.202778"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-25T02:48:59.030393" level="INFO">Starting the test case!</msg>
+<arg>Starting the test case!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-25T02:48:59.030090" elapsed="0.000384"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:48:59.031250" level="INFO">Opening browser 'chrome' to base url 'https://www.happydayshopping.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-25T02:48:59.030850" elapsed="9.397945"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-25T02:49:08.429597" elapsed="1.151587"/>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:49:09.582651" level="INFO">Clicking image 'xpath://img[@alt='Flash Sale']'.</msg>
+<arg>${FLASHSALE1}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T02:49:09.581772" elapsed="14.955532"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T02:49:27.544888" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T02:49:24.544237" elapsed="3.000825"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:49:30.168711" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-81.png"&gt;&lt;img src="selenium-screenshot-81.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-25T02:49:30.169033" level="FAIL">Element with locator 'xpath://img[@title='Extraderm plus Vitamins - Exfoliant 4']' not found.</msg>
+<arg>${PRODUCT3}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="FAIL" start="2024-03-25T02:49:27.545832" elapsed="2.627623">Element with locator 'xpath://img[@title='Extraderm plus Vitamins - Exfoliant 4']' not found.</status>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<arg>${PRODUCT4}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:49:30.173903" elapsed="0.000080"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>OMR 1.50</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:49:30.174392" elapsed="0.000095"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-25T02:49:30.174815" elapsed="0.000076"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-03-25T02:49:30.175217" elapsed="0.000077"/>
+</kw>
+<doc>User can view the correct price of the product if click the product detail</doc>
+<tag>Positive Test Case</tag>
+<status status="FAIL" start="2024-03-25T02:48:58.823299" elapsed="31.353294">Element with locator 'xpath://img[@title='Extraderm plus Vitamins - Exfoliant 4']' not found.</status>
+</test>
+<test id="s1-t5" name="TC05. Confirm whether the &quot;Add to Bag&quot; button is present and can be use or not on the product detail" line="144">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-03-25T02:49:30.179864" elapsed="0.006139"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-03-25T02:49:30.186473" elapsed="0.471406"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-25T02:49:30.658726" level="INFO">Starting the test case!</msg>
+<arg>Starting the test case!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-25T02:49:30.658416" elapsed="0.000438"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:49:30.659924" level="INFO">Opening browser 'chrome' to base url 'https://www.happydayshopping.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-25T02:49:30.659348" elapsed="15.898116"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-25T02:49:46.558487" elapsed="0.347136"/>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:49:46.906676" level="INFO">Clicking image 'xpath://img[@alt='Flash Sale']'.</msg>
+<arg>${FLASHSALE1}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T02:49:46.906089" elapsed="10.830045"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T02:50:00.740581" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T02:49:57.737154" elapsed="3.003589"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:50:03.245111" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-82.png"&gt;&lt;img src="selenium-screenshot-82.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-25T02:50:03.247439" level="FAIL">Element with locator 'xpath://img[@title='Extraderm plus Vitamins - Exfoliant 4']' not found.</msg>
+<arg>${PRODUCT3}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="FAIL" start="2024-03-25T02:50:00.741952" elapsed="2.508487">Element with locator 'xpath://img[@title='Extraderm plus Vitamins - Exfoliant 4']' not found.</status>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<arg>${PRODUCT4}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:50:03.251819" elapsed="0.000221"/>
+</kw>
+<kw name="Page Should Contain Button" owner="SeleniumLibrary">
+<arg>${BUTTON_ADDTOBAG}</arg>
+<doc>Verifies button ``locator`` is found from current page.</doc>
+<status status="NOT RUN" start="2024-03-25T02:50:03.257751" elapsed="0.000104"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${BUTTON_ADDTOBAG}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:50:03.258283" elapsed="0.000065"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>xpath://span[normalize-space()='1 item in the bag']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-03-25T02:50:03.259544" elapsed="0.000109"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-25T02:50:03.260254" elapsed="0.000069"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-03-25T02:50:03.260804" elapsed="0.000100"/>
+</kw>
+<doc>User can view the Add to Bag button in the product detail</doc>
+<tag>Positive Test Case</tag>
+<status status="FAIL" start="2024-03-25T02:49:30.178044" elapsed="33.089807">Element with locator 'xpath://img[@title='Extraderm plus Vitamins - Exfoliant 4']' not found.</status>
+</test>
+<test id="s1-t6" name="TC06. Test users can add more than one item on the product detail page" line="170">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-03-25T02:50:03.282528" elapsed="0.004325"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-03-25T02:50:03.287369" elapsed="0.681646"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-25T02:50:03.969909" level="INFO">Starting the test case!</msg>
+<arg>Starting the test case!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-25T02:50:03.969548" elapsed="0.000475"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:50:03.971102" level="INFO">Opening browser 'chrome' to base url 'https://www.happydayshopping.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-25T02:50:03.970521" elapsed="12.329587"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-25T02:50:16.301080" elapsed="0.636883"/>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:50:16.939633" level="INFO">Clicking image 'xpath://img[@alt='Flash Sale']'.</msg>
+<arg>${FLASHSALE1}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T02:50:16.938933" elapsed="20.325878"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T02:50:40.267453" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T02:50:37.265524" elapsed="3.002121"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${PRODUCT3}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-03-25T02:50:40.268112" elapsed="0.823928"/>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:50:41.093264" level="INFO">Clicking image 'xpath://img[@title='Bench Tickled Pink 100ml']'.</msg>
+<arg>${PRODUCT4}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T02:50:41.092728" elapsed="0.914259"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T02:50:45.015564" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T02:50:42.007598" elapsed="3.009118"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:50:45.019262" level="INFO">Clicking button 'xpath://div[@class='form-control form-control--button form-control--large form-control--primary form-control--flexible form-control--animated details-product-purchase__add-to-bag form-control__button--icon-center form-control--done']//button[@type='button']'.</msg>
+<arg>${BUTTON_ADDTOBAG}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T02:50:45.018235" elapsed="1.647573"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T02:50:49.672606" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T02:50:46.669248" elapsed="3.003838"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:50:49.674540" level="INFO">Clicking button 'xpath://div[@class='form-control form-control--button form-control--large form-control--secondary form-control--flexible form-control--animated details-product-purchase__add-more form-control__button--icon-center form-control--done']//button[@type='button']'.</msg>
+<arg>${BUTTON_ADDMORE}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T02:50:49.673816" elapsed="1.205496"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:50:51.329467" level="INFO">Element 'xpath://a[@title='Go to your shopping cart']' is displayed.</msg>
+<arg>${NOTIF2}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-25T02:50:50.880036" elapsed="0.449568"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T02:50:56.330368" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T02:50:51.329885" elapsed="5.000674"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-25T02:50:56.331588" elapsed="0.374310"/>
+</kw>
+<doc>User can add more items to bag</doc>
+<tag>Positive Test Case</tag>
+<status status="PASS" start="2024-03-25T02:50:03.270928" elapsed="53.435604"/>
+</test>
+<test id="s1-t7" name="TC07. Verify the qty of selected products is clearly shown or not and can changes the qty on the checkout page" line="198">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-03-25T02:50:56.708811" elapsed="0.000496"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-03-25T02:50:56.709674" elapsed="0.617242"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-25T02:50:57.327588" level="INFO">Starting the test case!</msg>
+<arg>Starting the test case!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-25T02:50:57.327351" elapsed="0.000307"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:50:57.328356" level="INFO">Opening browser 'chrome' to base url 'https://www.happydayshopping.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-25T02:50:57.328029" elapsed="11.774159"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-25T02:51:09.102823" elapsed="0.750055"/>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:51:09.853926" level="INFO">Clicking image 'xpath://img[@alt='Flash Sale']'.</msg>
+<arg>${FLASHSALE1}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T02:51:09.853305" elapsed="1.498610"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T02:51:14.360828" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T02:51:11.352566" elapsed="3.009041"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:51:14.375531" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=123.0.6312.59)
+Stacktrace:
+0   chromedriver                        0x00000001041b70f8 chromedriver + 4595960
+1   chromedriver                        0x00000001041aee63 chromedriver + 4562531
+2   chromedriver                        0x0000000103db239a chromedriver + 381850
+3   chromedriver                        0x0000000103d8b17d chromedriver + 221565
+4   chromedriver                        0x0000000103e25e4d chromedriver + 855629
+5   chromedriver                        0x0000000103e3d858 chromedriver + 952408
+6   chromedriver                        0x0000000103e1dee3 chromedriver + 823011
+7   chromedriver                        0x0000000103deebe4 chromedriver + 629732
+8   chromedriver                        0x0000000103def79e chromedriver + 632734
+9   chromedriver                        0x000000010417d012 chromedriver + 4358162
+10  chromedriver                        0x0000000104181c5d chromedriver + 4377693
+11  chromedriver                        0x00000001041815d3 chromedriver + 4376019
+12  chromedriver                        0x0000000104181f05 chromedriver + 4378373
+13  chromedriver                        0x0000000104166a35 chromedriver + 4266549
+14  chromedriver                        0x000000010418228d chromedriver + 4379277
+15  chromedriver                        0x0000000104159080 chromedriver + 4210816
+16  chromedriver                        0x000000010419fac8 chromedriver + 4500168
+17  chromedriver                        0x000000010419fc41 chromedriver + 4500545
+18  chromedriver                        0x00000001041aeaa3 chromedriver + 4561571
+19  libsystem_pthread.dylib             0x00007ff8144c04e1 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff8144bbf6b thread_start + 15
+</msg>
+<msg time="2024-03-25T02:51:14.380977" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=123.0.6312.59)
+Stacktrace:
+0   chromedriver                        0x00000001041b70f8 chromedriver + 4595960
+1   chromedriver                        0x00000001041aee63 chromedriver + 4562531
+2   chromedriver                        0x0000000103db239a chromedriver + 381850
+3   chromedriver                        0x0000000103d8b17d chromedriver + 221565
+4   chromedriver                        0x0000000103e25e4d chromedriver + 855629
+5   chromedriver                        0x0000000103e3d858 chromedriver + 952408
+6   chromedriver                        0x0000000103e1dee3 chromedriver + 823011
+7   chromedriver                        0x0000000103deebe4 chromedriver + 629732
+8   chromedriver                        0x0000000103def79e chromedriver + 632734
+9   chromedriver                        0x000000010417d012 chromedriver + 4358162
+10  chromedriver                        0x0000000104181c5d chromedriver + 4377693
+11  chromedriver                        0x00000001041815d3 chromedriver + 4376019
+12  chromedriver                        0x0000000104181f05 chromedriver + 4378373
+13  chromedriver                        0x0000000104166a35 chromedriver + 4266549
+14  chromedriver                        0x000000010418228d chromedriver + 4379277
+15  chromedriver                        0x0000000104159080 chromedriver + 4210816
+16  chromedriver                        0x000000010419fac8 chromedriver + 4500168
+17  chromedriver                        0x000000010419fc41 chromedriver + 4500545
+18  chromedriver                        0x00000001041aeaa3 chromedriver + 4561571
+19  libsystem_pthread.dylib             0x00007ff8144c04e1 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff8144bbf6b thread_start + 15
+</msg>
+<arg>${PRODUCT3}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="FAIL" start="2024-03-25T02:51:14.362228" elapsed="0.028388">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=123.0.6312.59)
+Stacktrace:
+0   chromedriver                        0x00000001041b70f8 chromedriver + 4595960
+1   chromedriver                        0x00000001041aee63 chromedriver + 4562531
+2   chromedriver                        0x0000000103db239a chromedriver + 381850
+3   chromedriver                        0x0000000103d8b17d chromedriver + 221565
+4   chromedriver                        0x0000000103e25e4d chromedriver + 855629
+5   chromedriver                        0x0000000103e3d858 chromedriver + 952408
+6   chromedriver                        0x0000000103e1dee3 chromedriver + 823011
+7   chromedriver                        0x0000000103deebe4 chromedriver + 629732
+    [ Message content over the limit has been removed. ]
+...romedriver                        0x0000000104181c5d chromedriver + 4377693
+11  chromedriver                        0x00000001041815d3 chromedriver + 4376019
+12  chromedriver                        0x0000000104181f05 chromedriver + 4378373
+13  chromedriver                        0x0000000104166a35 chromedriver + 4266549
+14  chromedriver                        0x000000010418228d chromedriver + 4379277
+15  chromedriver                        0x0000000104159080 chromedriver + 4210816
+16  chromedriver                        0x000000010419fac8 chromedriver + 4500168
+17  chromedriver                        0x000000010419fc41 chromedriver + 4500545
+18  chromedriver                        0x00000001041aeaa3 chromedriver + 4561571
+19  libsystem_pthread.dylib             0x00007ff8144c04e1 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff8144bbf6b thread_start + 15</status>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<arg>${PRODUCT4}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:51:14.391151" elapsed="0.000096"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-25T02:51:14.391621" elapsed="0.000091"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${BUTTON_ADDTOBAG}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:51:14.392736" elapsed="0.000223"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-25T02:51:14.393962" elapsed="0.000218"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${BUTTON_GOTOBAG}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:51:14.394735" elapsed="0.000107"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${QUANTITY2}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-03-25T02:51:14.395657" elapsed="0.000120"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<arg>${QUANTITY3}</arg>
+<arg>3</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:51:14.396706" elapsed="0.000130"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-25T02:51:14.397987" elapsed="0.000332"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-03-25T02:51:14.399654" elapsed="0.000222"/>
+</kw>
+<doc>User can view and edit the qty on the bag page</doc>
+<tag>Positive Test Case</tag>
+<status status="FAIL" start="2024-03-25T02:50:56.707356" elapsed="17.693076">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=123.0.6312.59)
+Stacktrace:
+0   chromedriver                        0x00000001041b70f8 chromedriver + 4595960
+1   chromedriver                        0x00000001041aee63 chromedriver + 4562531
+2   chromedriver                        0x0000000103db239a chromedriver + 381850
+3   chromedriver                        0x0000000103d8b17d chromedriver + 221565
+4   chromedriver                        0x0000000103e25e4d chromedriver + 855629
+5   chromedriver                        0x0000000103e3d858 chromedriver + 952408
+6   chromedriver                        0x0000000103e1dee3 chromedriver + 823011
+7   chromedriver                        0x0000000103deebe4 chromedriver + 629732
+    [ Message content over the limit has been removed. ]
+...romedriver                        0x0000000104181c5d chromedriver + 4377693
+11  chromedriver                        0x00000001041815d3 chromedriver + 4376019
+12  chromedriver                        0x0000000104181f05 chromedriver + 4378373
+13  chromedriver                        0x0000000104166a35 chromedriver + 4266549
+14  chromedriver                        0x000000010418228d chromedriver + 4379277
+15  chromedriver                        0x0000000104159080 chromedriver + 4210816
+16  chromedriver                        0x000000010419fac8 chromedriver + 4500168
+17  chromedriver                        0x000000010419fc41 chromedriver + 4500545
+18  chromedriver                        0x00000001041aeaa3 chromedriver + 4561571
+19  libsystem_pthread.dylib             0x00007ff8144c04e1 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff8144bbf6b thread_start + 15</status>
+</test>
+<test id="s1-t8" name="TC08. Verify the total price of products is clearly shown or not on the checkout page" line="227">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-03-25T02:51:14.417562" elapsed="0.001766"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-03-25T02:51:14.419752" elapsed="0.829273"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-25T02:51:15.250961" level="INFO">Starting the test case!</msg>
+<arg>Starting the test case!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-25T02:51:15.250196" elapsed="0.000878"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:51:15.251969" level="INFO">Opening browser 'chrome' to base url 'https://www.happydayshopping.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-25T02:51:15.251520" elapsed="12.003568"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-25T02:51:27.255990" elapsed="0.323546"/>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:51:27.580741" level="INFO">Clicking image 'xpath://img[@alt='Flash Sale']'.</msg>
+<arg>${FLASHSALE1}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T02:51:27.579947" elapsed="11.501707"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T02:51:42.083290" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T02:51:39.082076" elapsed="3.001382"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${PRODUCT3}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-03-25T02:51:42.083886" elapsed="0.750582"/>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:51:42.835947" level="INFO">Clicking image 'xpath://img[@title='Bench Tickled Pink 100ml']'.</msg>
+<arg>${PRODUCT4}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T02:51:42.834874" elapsed="0.861701"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T02:51:46.697592" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T02:51:43.697193" elapsed="3.000563"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:51:46.698655" level="INFO">Clicking button 'xpath://div[@class='form-control form-control--button form-control--large form-control--primary form-control--flexible form-control--animated details-product-purchase__add-to-bag form-control__button--icon-center form-control--done']//button[@type='button']'.</msg>
+<arg>${BUTTON_ADDTOBAG}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T02:51:46.698185" elapsed="1.257840"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T02:51:50.957576" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T02:51:47.956404" elapsed="3.001364"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:51:50.958752" level="INFO">Clicking button 'xpath://div[@class='form-control form-control--button form-control--large form-control--primary form-control--flexible details-product-purchase__checkout']//button[@type='button']'.</msg>
+<arg>${BUTTON_GOTOBAG}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T02:51:50.958257" elapsed="1.229080"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T02:51:55.189175" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T02:51:52.187952" elapsed="3.001389"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:51:55.190205" level="INFO">Selecting options from selection list 'xpath://select[contains(@aria-label,'Quantity:')]' by value 3.</msg>
+<arg>${QUANTITY3}</arg>
+<arg>3</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-03-25T02:51:55.189729" elapsed="1.747332"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T02:51:59.938967" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T02:51:56.937360" elapsed="3.001765"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:52:00.387100" level="INFO">Element 'xpath://span[contains(@class,'ec-cart-summary__total')]' is displayed.</msg>
+<arg>${TOTALPRICE2}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-25T02:51:59.939515" elapsed="0.447760"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T02:52:05.389181" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T02:52:00.387696" elapsed="5.001756"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-25T02:52:05.389866" elapsed="0.532026"/>
+</kw>
+<doc>User can view the total price of selected products</doc>
+<tag>Positive Test Case</tag>
+<status status="PASS" start="2024-03-25T02:51:14.415803" elapsed="51.506542"/>
+</test>
+<test id="s1-t9" name="TC09. Verify if the user has input invalid promo coupon" line="258">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-03-25T02:52:05.924903" elapsed="0.000711"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-03-25T02:52:05.925986" elapsed="0.816523"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-25T02:52:06.743422" level="INFO">Starting the test case!</msg>
+<arg>Starting the test case!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-25T02:52:06.743113" elapsed="0.000424"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:52:06.744372" level="INFO">Opening browser 'chrome' to base url 'https://www.happydayshopping.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-25T02:52:06.743968" elapsed="13.769735"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-25T02:52:20.515832" elapsed="0.669055"/>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:52:21.185862" level="INFO">Clicking image 'xpath://img[@alt='Flash Sale']'.</msg>
+<arg>${FLASHSALE1}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T02:52:21.185282" elapsed="7.669434"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T02:52:31.856094" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T02:52:28.855154" elapsed="3.001119"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${PRODUCT3}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-03-25T02:52:31.861974" elapsed="2.495195"/>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:52:34.358140" level="INFO">Clicking image 'xpath://img[@title='Bench Tickled Pink 100ml']'.</msg>
+<arg>${PRODUCT4}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T02:52:34.357646" elapsed="1.824613"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T02:52:39.184736" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T02:52:36.182735" elapsed="3.002145"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:52:39.185634" level="INFO">Clicking button 'xpath://div[@class='form-control form-control--button form-control--large form-control--primary form-control--flexible form-control--animated details-product-purchase__add-to-bag form-control__button--icon-center form-control--done']//button[@type='button']'.</msg>
+<arg>${BUTTON_ADDTOBAG}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T02:52:39.185267" elapsed="1.346492"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T02:52:43.532462" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T02:52:40.532052" elapsed="3.000535"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:52:43.533181" level="INFO">Clicking button 'xpath://div[@class='form-control form-control--button form-control--large form-control--primary form-control--flexible details-product-purchase__checkout']//button[@type='button']'.</msg>
+<arg>${BUTTON_GOTOBAG}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T02:52:43.532868" elapsed="1.801505"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T02:52:48.336651" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T02:52:45.335430" elapsed="3.001338"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${BUTTON_SEARCH}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-03-25T02:52:48.337113" elapsed="0.707117"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:52:49.044947" level="INFO">Clicking link 'xpath://label[@for='ec-cart-sidebar-discount-coupon-input']//a[@class='ec-link'][normalize-space()='Redeem your coupon']'.</msg>
+<arg>${PROMOCOUPON1}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T02:52:49.044594" elapsed="0.691720"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:52:49.737446" level="INFO">Typing text 'HEMAT20' into text field 'xpath://input[@id='ec-cart-sidebar-discount-coupon-input']'.</msg>
+<arg>${PROMOCOUPON2}</arg>
+<arg>HEMAT20</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T02:52:49.736919" elapsed="0.840637"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:52:50.578468" level="INFO">Clicking button 'xpath://div[@class='ec-cart__sidebar-inner']//div[@class='form-control form-control--button form-control--medium form-control--secondary form-control--flexible form-control--done ec-cart-coupon__button ec-cart-coupon__button--apply']//button[@type='button']'.</msg>
+<arg>${BUTTON_APPLYCOUPON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T02:52:50.578037" elapsed="1.127005"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T02:52:54.706000" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T02:52:51.705476" elapsed="3.000692"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:52:55.140932" level="INFO">Element 'xpath://div[contains(@class,'ec-cart__sidebar-inner')]//div[contains(@class,'form__msg form__msg--error')][normalize-space()='Code is not valid']' is displayed.</msg>
+<arg>${NOTIF3}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-25T02:52:54.706583" elapsed="0.434487"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T02:53:00.144098" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T02:52:55.141386" elapsed="5.003042"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-25T02:53:00.144958" elapsed="0.490511"/>
+</kw>
+<doc>User input invalid promo coupon, error message should be appear</doc>
+<tag>Negative Test Case</tag>
+<status status="PASS" start="2024-03-25T02:52:05.923016" elapsed="54.713122"/>
+</test>
+<test id="s1-t10" name="TC10. Verify if the user has input an email without a valid email extension behind it" line="292">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-03-25T02:53:00.638246" elapsed="0.000442"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-03-25T02:53:00.638937" elapsed="0.820254"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-25T02:53:01.459848" level="INFO">Starting the test case!</msg>
+<arg>Starting the test case!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-25T02:53:01.459676" elapsed="0.000233"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:53:01.461608" level="INFO">Opening browser 'chrome' to base url 'https://www.happydayshopping.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-25T02:53:01.460130" elapsed="12.809208"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-25T02:53:14.270137" elapsed="0.619126"/>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:53:14.891641" level="INFO">Clicking image 'xpath://img[@alt='Flash Sale']'.</msg>
+<arg>${FLASHSALE1}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T02:53:14.891020" elapsed="33.854457"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T02:53:51.757844" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T02:53:48.753898" elapsed="3.004157"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:53:52.396485" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-83.png"&gt;&lt;img src="selenium-screenshot-83.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-25T02:53:52.397234" level="FAIL">Element with locator 'xpath://img[@title='Extraderm plus Vitamins - Exfoliant 4']' not found.</msg>
+<arg>${PRODUCT3}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="FAIL" start="2024-03-25T02:53:51.759161" elapsed="0.641186">Element with locator 'xpath://img[@title='Extraderm plus Vitamins - Exfoliant 4']' not found.</status>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<arg>${PRODUCT4}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:53:52.401024" elapsed="0.000160"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-25T02:53:52.401681" elapsed="0.000157"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${BUTTON_ADDTOBAG}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:53:52.402474" elapsed="0.000087"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-25T02:53:52.402878" elapsed="0.000075"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${BUTTON_GOTOBAG}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:53:52.403281" elapsed="0.000081"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-25T02:53:52.403982" elapsed="0.000111"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${EMAIL}</arg>
+<arg>sarah_sasa17</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:53:52.404777" elapsed="0.000116"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${BUTTON_CHECKOUT}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:53:52.406337" elapsed="0.000119"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${NOTIF4}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-03-25T02:53:52.407537" elapsed="0.000109"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-25T02:53:52.408507" elapsed="0.000109"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-03-25T02:53:52.409089" elapsed="0.000108"/>
+</kw>
+<doc>User input an email without a valid email extension behind it, error message should appear</doc>
+<tag>Edge Test Case</tag>
+<status status="FAIL" start="2024-03-25T02:53:00.636977" elapsed="51.773846">Element with locator 'xpath://img[@title='Extraderm plus Vitamins - Exfoliant 4']' not found.</status>
+</test>
+<test id="s1-t11" name="TC11. Verify if the user has input an email without an email name and just the extension behind it" line="323">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-03-25T02:53:52.416434" elapsed="0.001130"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-03-25T02:53:52.418191" elapsed="1.142336"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-25T02:53:53.561310" level="INFO">Starting the test case!</msg>
+<arg>Starting the test case!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-25T02:53:53.561002" elapsed="0.000415"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:53:53.562987" level="INFO">Opening browser 'chrome' to base url 'https://www.happydayshopping.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-25T02:53:53.562306" elapsed="27.109837"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-25T02:54:20.673013" elapsed="0.649656"/>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:54:21.323790" level="INFO">Clicking image 'xpath://img[@alt='Flash Sale']'.</msg>
+<arg>${FLASHSALE1}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T02:54:21.323241" elapsed="8.800084"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T02:54:33.125306" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T02:54:30.124269" elapsed="3.001184"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:54:34.787302" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-84.png"&gt;&lt;img src="selenium-screenshot-84.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-25T02:54:34.794787" level="FAIL">Element with locator 'xpath://img[@title='Extraderm plus Vitamins - Exfoliant 4']' not found.</msg>
+<arg>${PRODUCT3}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="FAIL" start="2024-03-25T02:54:33.126390" elapsed="1.670537">Element with locator 'xpath://img[@title='Extraderm plus Vitamins - Exfoliant 4']' not found.</status>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<arg>${PRODUCT4}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:54:34.797565" elapsed="0.000117"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-25T02:54:34.798035" elapsed="0.000058"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${BUTTON_ADDTOBAG}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:54:34.798744" elapsed="0.000067"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-25T02:54:34.799090" elapsed="0.000058"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${BUTTON_GOTOBAG}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:54:34.799469" elapsed="0.000078"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${QUANTITY2}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-03-25T02:54:34.812573" elapsed="0.000109"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-25T02:54:34.813058" elapsed="0.000071"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<arg>${QUANTITY3}</arg>
+<arg>3</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:54:34.813903" elapsed="0.000094"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-25T02:54:34.814310" elapsed="0.000059"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${EMAIL}</arg>
+<arg>@yahoo.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:54:34.814754" elapsed="0.000066"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${BUTTON_CHECKOUT}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:54:34.815248" elapsed="0.000078"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${NOTIF4}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-03-25T02:54:34.815725" elapsed="0.000065"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-25T02:54:34.816823" elapsed="0.000097"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-03-25T02:54:34.817389" elapsed="0.000082"/>
+</kw>
+<doc>User input an email without an email name, error message should appear</doc>
+<tag>Edge Test Case</tag>
+<status status="FAIL" start="2024-03-25T02:53:52.413860" elapsed="42.404224">Element with locator 'xpath://img[@title='Extraderm plus Vitamins - Exfoliant 4']' not found.</status>
+</test>
+<test id="s1-t12" name="TC12. Verify if the user can input an valid email address" line="357">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-03-25T02:54:34.820469" elapsed="0.002042"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-03-25T02:54:34.822985" elapsed="1.248010"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-25T02:54:36.075803" level="INFO">Starting the test case!</msg>
+<arg>Starting the test case!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-25T02:54:36.075526" elapsed="0.000381"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:54:36.076773" level="INFO">Opening browser 'chrome' to base url 'https://www.happydayshopping.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-25T02:54:36.076352" elapsed="25.868758"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-25T02:55:01.954131" elapsed="0.850229"/>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:55:02.809193" level="INFO">Clicking image 'xpath://img[@alt='Flash Sale']'.</msg>
+<arg>${FLASHSALE1}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T02:55:02.804948" elapsed="14.299502"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T02:55:20.105974" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T02:55:17.104933" elapsed="3.001174"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${PRODUCT3}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-03-25T02:55:20.106494" elapsed="0.741435"/>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:55:20.849040" level="INFO">Clicking image 'xpath://img[@title='Bench Tickled Pink 100ml']'.</msg>
+<arg>${PRODUCT4}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T02:55:20.848521" elapsed="0.745333"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T02:55:24.595447" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T02:55:21.594601" elapsed="3.001083"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:55:24.596604" level="INFO">Clicking button 'xpath://div[@class='form-control form-control--button form-control--large form-control--primary form-control--flexible form-control--animated details-product-purchase__add-to-bag form-control__button--icon-center form-control--done']//button[@type='button']'.</msg>
+<arg>${BUTTON_ADDTOBAG}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T02:55:24.596251" elapsed="1.208375"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:55:25.805483" level="INFO">Clicking button 'xpath://div[@class='form-control form-control--button form-control--large form-control--primary form-control--flexible details-product-purchase__checkout']//button[@type='button']'.</msg>
+<msg time="2024-03-25T02:55:27.368597" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-85.png"&gt;&lt;img src="selenium-screenshot-85.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-25T02:55:27.371110" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=123.0.6312.59)
+Stacktrace:
+0   chromedriver                        0x000000010d4930f8 chromedriver + 4595960
+1   chromedriver                        0x000000010d48ae63 chromedriver + 4562531
+2   chromedriver                        0x000000010d08e225 chromedriver + 381477
+3   chromedriver                        0x000000010d0d91ed chromedriver + 688621
+4   chromedriver                        0x000000010d0cc90c chromedriver + 637196
+5   chromedriver                        0x000000010d0fa142 chromedriver + 823618
+6   chromedriver                        0x000000010d0cc2b8 chromedriver + 635576
+7   chromedriver                        0x000000010d0fa2fe chromedriver + 824062
+8   chromedriver                        0x000000010d11a14d chromedriver + 954701
+9   chromedriver                        0x000000010d0f9ee3 chromedriver + 823011
+10  chromedriver                        0x000000010d0cabe4 chromedriver + 629732
+11  chromedriver                        0x000000010d0cb79e chromedriver + 632734
+12  chromedriver                        0x000000010d459012 chromedriver + 4358162
+13  chromedriver                        0x000000010d45dc5d chromedriver + 4377693
+14  chromedriver                        0x000000010d45d5d3 chromedriver + 4376019
+15  chromedriver                        0x000000010d45df05 chromedriver + 4378373
+16  chromedriver                        0x000000010d442a35 chromedriver + 4266549
+17  chromedriver                        0x000000010d45e28d chromedriver + 4379277
+18  chromedriver                        0x000000010d435080 chromedriver + 4210816
+19  chromedriver                        0x000000010d47bac8 chromedriver + 4500168
+20  chromedriver                        0x000000010d47bc41 chromedriver + 4500545
+21  chromedriver                        0x000000010d48aaa3 chromedriver + 4561571
+22  libsystem_pthread.dylib             0x00007ff8144c04e1 _pthread_start + 125
+23  libsystem_pthread.dylib             0x00007ff8144bbf6b thread_start + 15
+</msg>
+<arg>${BUTTON_GOTOBAG}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2024-03-25T02:55:25.805115" elapsed="1.575430">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=123.0.6312.59)
+Stacktrace:
+0   chromedriver                        0x000000010d4930f8 chromedriver + 4595960
+1   chromedriver                        0x000000010d48ae63 chromedriver + 4562531
+2   chromedriver                        0x000000010d08e225 chromedriver + 381477
+3   chromedriver                        0x000000010d0d91ed chromedriver + 688621
+4   chromedriver                        0x000000010d0cc90c chromedriver + 637196
+5   chromedriver                        0x000000010d0fa142 chromedriver + 823618
+6   chromedriver                        0x000000010d0cc2b8 chromedriver + 635576
+7   chromedriver                        0x000000010d0fa2fe chromedriver + 824062
+8   chromedriver                        0x000000010d11a14d chromedriver + 9...
+    [ Message content over the limit has been removed. ]
+...romedriver                        0x000000010d45dc5d chromedriver + 4377693
+14  chromedriver                        0x000000010d45d5d3 chromedriver + 4376019
+15  chromedriver                        0x000000010d45df05 chromedriver + 4378373
+16  chromedriver                        0x000000010d442a35 chromedriver + 4266549
+17  chromedriver                        0x000000010d45e28d chromedriver + 4379277
+18  chromedriver                        0x000000010d435080 chromedriver + 4210816
+19  chromedriver                        0x000000010d47bac8 chromedriver + 4500168
+20  chromedriver                        0x000000010d47bc41 chromedriver + 4500545
+21  chromedriver                        0x000000010d48aaa3 chromedriver + 4561571
+22  libsystem_pthread.dylib             0x00007ff8144c04e1 _pthread_start + 125
+23  libsystem_pthread.dylib             0x00007ff8144bbf6b thread_start + 15</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${EMAIL}</arg>
+<arg>sarah_sasa17@yahoo.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:55:27.380978" elapsed="0.000050"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${BUTTON_CHECKOUT}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:55:27.381230" elapsed="0.000039"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-25T02:55:27.381430" elapsed="0.000037"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-03-25T02:55:27.381644" elapsed="0.000052"/>
+</kw>
+<doc>User input a valid email address</doc>
+<tag>Positive Test Case</tag>
+<status status="FAIL" start="2024-03-25T02:54:34.819037" elapsed="52.563375">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=123.0.6312.59)
+Stacktrace:
+0   chromedriver                        0x000000010d4930f8 chromedriver + 4595960
+1   chromedriver                        0x000000010d48ae63 chromedriver + 4562531
+2   chromedriver                        0x000000010d08e225 chromedriver + 381477
+3   chromedriver                        0x000000010d0d91ed chromedriver + 688621
+4   chromedriver                        0x000000010d0cc90c chromedriver + 637196
+5   chromedriver                        0x000000010d0fa142 chromedriver + 823618
+6   chromedriver                        0x000000010d0cc2b8 chromedriver + 635576
+7   chromedriver                        0x000000010d0fa2fe chromedriver + 824062
+8   chromedriver                        0x000000010d11a14d chromedriver + 9...
+    [ Message content over the limit has been removed. ]
+...romedriver                        0x000000010d45dc5d chromedriver + 4377693
+14  chromedriver                        0x000000010d45d5d3 chromedriver + 4376019
+15  chromedriver                        0x000000010d45df05 chromedriver + 4378373
+16  chromedriver                        0x000000010d442a35 chromedriver + 4266549
+17  chromedriver                        0x000000010d45e28d chromedriver + 4379277
+18  chromedriver                        0x000000010d435080 chromedriver + 4210816
+19  chromedriver                        0x000000010d47bac8 chromedriver + 4500168
+20  chromedriver                        0x000000010d47bc41 chromedriver + 4500545
+21  chromedriver                        0x000000010d48aaa3 chromedriver + 4561571
+22  libsystem_pthread.dylib             0x00007ff8144c04e1 _pthread_start + 125
+23  libsystem_pthread.dylib             0x00007ff8144bbf6b thread_start + 15</status>
+</test>
+<test id="s1-t13" name="TC13. Verify if the user can input a valid data for shipping address and choose the shipping method" line="385">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-03-25T02:55:27.494434" elapsed="0.001285"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-03-25T02:55:27.496434" elapsed="1.482975"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-25T02:55:28.980264" level="INFO">Starting the test case!</msg>
+<arg>Starting the test case!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-25T02:55:28.979945" elapsed="0.000463"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:55:28.982988" level="INFO">Opening browser 'chrome' to base url 'https://www.happydayshopping.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-25T02:55:28.981019" elapsed="12.956676"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-25T02:55:41.939190" elapsed="0.676083"/>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:55:42.617244" level="INFO">Clicking image 'xpath://img[@alt='Flash Sale']'.</msg>
+<arg>${FLASHSALE1}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T02:55:42.615930" elapsed="12.310145"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T02:55:57.928250" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T02:55:54.926592" elapsed="3.001857"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${PRODUCT3}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-03-25T02:55:57.928891" elapsed="1.082926"/>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:55:59.013568" level="INFO">Clicking image 'xpath://img[@title='Bench Tickled Pink 100ml']'.</msg>
+<arg>${PRODUCT4}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T02:55:59.013078" elapsed="0.755198"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T02:56:02.774211" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T02:55:59.768876" elapsed="3.005496"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:56:02.776326" level="INFO">Clicking button 'xpath://div[@class='form-control form-control--button form-control--large form-control--primary form-control--flexible form-control--animated details-product-purchase__add-to-bag form-control__button--icon-center form-control--done']//button[@type='button']'.</msg>
+<msg time="2024-03-25T02:56:05.205649" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-86.png"&gt;&lt;img src="selenium-screenshot-86.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-25T02:56:05.206319" level="FAIL">Button with locator 'xpath://div[@class='form-control form-control--button form-control--large form-control--primary form-control--flexible form-control--animated details-product-purchase__add-to-bag form-control__button--icon-center form-control--done']//button[@type='button']' not found.</msg>
+<arg>${BUTTON_ADDTOBAG}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2024-03-25T02:56:02.774916" elapsed="2.433358">Button with locator 'xpath://div[@class='form-control form-control--button form-control--large form-control--primary form-control--flexible form-control--animated details-product-purchase__add-to-bag form-control__button--icon-center form-control--done']//button[@type='button']' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:05.208693" elapsed="0.000082"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${BUTTON_GOTOBAG}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:05.209110" elapsed="0.000079"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${EMAIL}</arg>
+<arg>sarah_sasa17@yahoo.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:05.209565" elapsed="0.000088"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${BUTTON_CHECKOUT}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:05.210005" elapsed="0.000081"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:05.210440" elapsed="0.000089"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${INPUT_NAME}</arg>
+<arg>Elsa Sarah NM</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:05.211250" elapsed="0.000137"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${INPUT_PHONE}</arg>
+<arg>6287864342375</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:05.212438" elapsed="0.000130"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${INPUT_ADDRESS}</arg>
+<arg>Jl. Asrama Polisi EX SPN No.3</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:05.213327" elapsed="0.000130"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${INPUT_CITY}</arg>
+<arg>Jakarta Timur</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:05.214083" elapsed="0.000096"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<arg>${SELECT_DELIVERY}</arg>
+<arg>AMERAT</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:05.214616" elapsed="0.000067"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${BUTTON_CONTINUE1}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:05.215014" elapsed="0.000085"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${BUTTON_CONTINUE2}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:05.215402" elapsed="0.000070"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:05.215797" elapsed="0.000081"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:05.216211" elapsed="0.000087"/>
+</kw>
+<doc>User input a valid data for shipping step and choose the shipping method</doc>
+<tag>Positive Test Case</tag>
+<status status="FAIL" start="2024-03-25T02:55:27.491470" elapsed="37.725378">Button with locator 'xpath://div[@class='form-control form-control--button form-control--large form-control--primary form-control--flexible form-control--animated details-product-purchase__add-to-bag form-control__button--icon-center form-control--done']//button[@type='button']' not found.</status>
+</test>
+<test id="s1-t14" name="TC14. Test payment is done successfully by choosing Cash on Delivery payment method" line="422">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-03-25T02:56:05.221258" elapsed="0.001411"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-03-25T02:56:05.223160" elapsed="1.744420"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-25T02:56:06.968352" level="INFO">Starting the test case!</msg>
+<arg>Starting the test case!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-25T02:56:06.968061" elapsed="0.000397"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:56:06.969646" level="INFO">Opening browser 'chrome' to base url 'https://www.happydayshopping.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-25T02:56:06.968903" elapsed="10.480188"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<msg time="2024-03-25T02:56:17.457096" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=123.0.6312.59)
+Stacktrace:
+0   chromedriver                        0x0000000109f3c0f8 chromedriver + 4595960
+1   chromedriver                        0x0000000109f33e63 chromedriver + 4562531
+2   chromedriver                        0x0000000109b3739a chromedriver + 381850
+3   chromedriver                        0x0000000109b1017d chromedriver + 221565
+4   chromedriver                        0x0000000109baae4d chromedriver + 855629
+5   chromedriver                        0x0000000109bc2858 chromedriver + 952408
+6   chromedriver                        0x0000000109ba2ee3 chromedriver + 823011
+7   chromedriver                        0x0000000109b73be4 chromedriver + 629732
+8   chromedriver                        0x0000000109b7479e chromedriver + 632734
+9   chromedriver                        0x0000000109f02012 chromedriver + 4358162
+10  chromedriver                        0x0000000109f06c5d chromedriver + 4377693
+11  chromedriver                        0x0000000109f065d3 chromedriver + 4376019
+12  chromedriver                        0x0000000109f06f05 chromedriver + 4378373
+13  chromedriver                        0x0000000109eeba35 chromedriver + 4266549
+14  chromedriver                        0x0000000109f0728d chromedriver + 4379277
+15  chromedriver                        0x0000000109ede080 chromedriver + 4210816
+16  chromedriver                        0x0000000109f24ac8 chromedriver + 4500168
+17  chromedriver                        0x0000000109f24c41 chromedriver + 4500545
+18  chromedriver                        0x0000000109f33aa3 chromedriver + 4561571
+19  libsystem_pthread.dylib             0x00007ff8144c04e1 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff8144bbf6b thread_start + 15
+</msg>
+<msg time="2024-03-25T02:56:17.459730" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=123.0.6312.59)
+Stacktrace:
+0   chromedriver                        0x0000000109f3c0f8 chromedriver + 4595960
+1   chromedriver                        0x0000000109f33e63 chromedriver + 4562531
+2   chromedriver                        0x0000000109b3739a chromedriver + 381850
+3   chromedriver                        0x0000000109b1017d chromedriver + 221565
+4   chromedriver                        0x0000000109baae4d chromedriver + 855629
+5   chromedriver                        0x0000000109bc2858 chromedriver + 952408
+6   chromedriver                        0x0000000109ba2ee3 chromedriver + 823011
+7   chromedriver                        0x0000000109b73be4 chromedriver + 629732
+8   chromedriver                        0x0000000109b7479e chromedriver + 632734
+9   chromedriver                        0x0000000109f02012 chromedriver + 4358162
+10  chromedriver                        0x0000000109f06c5d chromedriver + 4377693
+11  chromedriver                        0x0000000109f065d3 chromedriver + 4376019
+12  chromedriver                        0x0000000109f06f05 chromedriver + 4378373
+13  chromedriver                        0x0000000109eeba35 chromedriver + 4266549
+14  chromedriver                        0x0000000109f0728d chromedriver + 4379277
+15  chromedriver                        0x0000000109ede080 chromedriver + 4210816
+16  chromedriver                        0x0000000109f24ac8 chromedriver + 4500168
+17  chromedriver                        0x0000000109f24c41 chromedriver + 4500545
+18  chromedriver                        0x0000000109f33aa3 chromedriver + 4561571
+19  libsystem_pthread.dylib             0x00007ff8144c04e1 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff8144bbf6b thread_start + 15
+</msg>
+<doc>Maximizes current browser window.</doc>
+<status status="FAIL" start="2024-03-25T02:56:17.450176" elapsed="0.013653">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=123.0.6312.59)
+Stacktrace:
+0   chromedriver                        0x0000000109f3c0f8 chromedriver + 4595960
+1   chromedriver                        0x0000000109f33e63 chromedriver + 4562531
+2   chromedriver                        0x0000000109b3739a chromedriver + 381850
+3   chromedriver                        0x0000000109b1017d chromedriver + 221565
+4   chromedriver                        0x0000000109baae4d chromedriver + 855629
+5   chromedriver                        0x0000000109bc2858 chromedriver + 952408
+6   chromedriver                        0x0000000109ba2ee3 chromedriver + 823011
+7   chromedriver                        0x0000000109b73be4 chromedriver + 629732
+    [ Message content over the limit has been removed. ]
+...romedriver                        0x0000000109f06c5d chromedriver + 4377693
+11  chromedriver                        0x0000000109f065d3 chromedriver + 4376019
+12  chromedriver                        0x0000000109f06f05 chromedriver + 4378373
+13  chromedriver                        0x0000000109eeba35 chromedriver + 4266549
+14  chromedriver                        0x0000000109f0728d chromedriver + 4379277
+15  chromedriver                        0x0000000109ede080 chromedriver + 4210816
+16  chromedriver                        0x0000000109f24ac8 chromedriver + 4500168
+17  chromedriver                        0x0000000109f24c41 chromedriver + 4500545
+18  chromedriver                        0x0000000109f33aa3 chromedriver + 4561571
+19  libsystem_pthread.dylib             0x00007ff8144c04e1 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff8144bbf6b thread_start + 15</status>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<arg>${FLASHSALE1}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:17.464399" elapsed="0.000092"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:17.465006" elapsed="0.000086"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${CODE_PRODUCT}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:17.465622" elapsed="0.000119"/>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<arg>${PRODUCT4}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:17.466233" elapsed="0.000092"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:17.466762" elapsed="0.000076"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${BUTTON_ADDTOBAG}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:17.467186" elapsed="0.000076"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:17.467598" elapsed="0.000058"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${BUTTON_GOTOBAG}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:17.468031" elapsed="0.000061"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${EMAIL}</arg>
+<arg>sarah_sasa17@yahoo.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:17.468508" elapsed="0.000331"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${BUTTON_CHECKOUT}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:17.469372" elapsed="0.000090"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:17.469856" elapsed="0.000097"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${INPUT_NAME}</arg>
+<arg>Harry Park</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:17.470817" elapsed="0.000104"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${INPUT_PHONE}</arg>
+<arg>+442912345678</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:17.471595" elapsed="0.000125"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${INPUT_ADDRESS}</arg>
+<arg>221b Baker Street</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:17.472402" elapsed="0.000103"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${INPUT_CITY}</arg>
+<arg>London</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:17.473272" elapsed="0.000309"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<arg>${SELECT_DELIVERY}</arg>
+<arg>AMERAT</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:17.474417" elapsed="0.000097"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${BUTTON_CONTINUE1}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:17.475064" elapsed="0.000096"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:17.475532" elapsed="0.000071"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${BUTTON_CONTINUE2}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:17.475946" elapsed="0.000075"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:17.476360" elapsed="0.000074"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${SELECT_PAYMENT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:17.477033" elapsed="0.000108"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${INPUT_NOTE}</arg>
+<arg>please pack it well</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:17.477558" elapsed="0.000083"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<arg>${SELECT_FINDUS}</arg>
+<arg>From a friend</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:17.478037" elapsed="0.000725"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${BUTTON_PLACEORDER}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:17.479287" elapsed="0.000159"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:17.480064" elapsed="0.000087"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-03-25T02:56:17.480579" elapsed="0.000087"/>
+</kw>
+<doc>User choose COD payment method and get the success payment.</doc>
+<tag>Positive Test Case</tag>
+<status status="FAIL" start="2024-03-25T02:56:05.218285" elapsed="12.263102">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=123.0.6312.59)
+Stacktrace:
+0   chromedriver                        0x0000000109f3c0f8 chromedriver + 4595960
+1   chromedriver                        0x0000000109f33e63 chromedriver + 4562531
+2   chromedriver                        0x0000000109b3739a chromedriver + 381850
+3   chromedriver                        0x0000000109b1017d chromedriver + 221565
+4   chromedriver                        0x0000000109baae4d chromedriver + 855629
+5   chromedriver                        0x0000000109bc2858 chromedriver + 952408
+6   chromedriver                        0x0000000109ba2ee3 chromedriver + 823011
+7   chromedriver                        0x0000000109b73be4 chromedriver + 629732
+    [ Message content over the limit has been removed. ]
+...romedriver                        0x0000000109f06c5d chromedriver + 4377693
+11  chromedriver                        0x0000000109f065d3 chromedriver + 4376019
+12  chromedriver                        0x0000000109f06f05 chromedriver + 4378373
+13  chromedriver                        0x0000000109eeba35 chromedriver + 4266549
+14  chromedriver                        0x0000000109f0728d chromedriver + 4379277
+15  chromedriver                        0x0000000109ede080 chromedriver + 4210816
+16  chromedriver                        0x0000000109f24ac8 chromedriver + 4500168
+17  chromedriver                        0x0000000109f24c41 chromedriver + 4500545
+18  chromedriver                        0x0000000109f33aa3 chromedriver + 4561571
+19  libsystem_pthread.dylib             0x00007ff8144c04e1 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff8144bbf6b thread_start + 15</status>
+</test>
+<doc>This is the payment journey</doc>
+<status status="FAIL" start="2024-03-25T02:48:16.353745" elapsed="481.134888"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="10" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="2" skip="0">Edge Test Case</stat>
+<stat pass="1" fail="0" skip="0">Negative Test Case</stat>
+<stat pass="3" fail="8" skip="0">Positive Test Case</stat>
+</tag>
+<suite>
+<stat pass="4" fail="10" skip="0" id="s1" name="Journeytopayment">Journeytopayment</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-03-25T02:51:14.375531" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=123.0.6312.59)
+Stacktrace:
+0   chromedriver                        0x00000001041b70f8 chromedriver + 4595960
+1   chromedriver                        0x00000001041aee63 chromedriver + 4562531
+2   chromedriver                        0x0000000103db239a chromedriver + 381850
+3   chromedriver                        0x0000000103d8b17d chromedriver + 221565
+4   chromedriver                        0x0000000103e25e4d chromedriver + 855629
+5   chromedriver                        0x0000000103e3d858 chromedriver + 952408
+6   chromedriver                        0x0000000103e1dee3 chromedriver + 823011
+7   chromedriver                        0x0000000103deebe4 chromedriver + 629732
+8   chromedriver                        0x0000000103def79e chromedriver + 632734
+9   chromedriver                        0x000000010417d012 chromedriver + 4358162
+10  chromedriver                        0x0000000104181c5d chromedriver + 4377693
+11  chromedriver                        0x00000001041815d3 chromedriver + 4376019
+12  chromedriver                        0x0000000104181f05 chromedriver + 4378373
+13  chromedriver                        0x0000000104166a35 chromedriver + 4266549
+14  chromedriver                        0x000000010418228d chromedriver + 4379277
+15  chromedriver                        0x0000000104159080 chromedriver + 4210816
+16  chromedriver                        0x000000010419fac8 chromedriver + 4500168
+17  chromedriver                        0x000000010419fc41 chromedriver + 4500545
+18  chromedriver                        0x00000001041aeaa3 chromedriver + 4561571
+19  libsystem_pthread.dylib             0x00007ff8144c04e1 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff8144bbf6b thread_start + 15
+</msg>
+<msg time="2024-03-25T02:56:17.457096" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=123.0.6312.59)
+Stacktrace:
+0   chromedriver                        0x0000000109f3c0f8 chromedriver + 4595960
+1   chromedriver                        0x0000000109f33e63 chromedriver + 4562531
+2   chromedriver                        0x0000000109b3739a chromedriver + 381850
+3   chromedriver                        0x0000000109b1017d chromedriver + 221565
+4   chromedriver                        0x0000000109baae4d chromedriver + 855629
+5   chromedriver                        0x0000000109bc2858 chromedriver + 952408
+6   chromedriver                        0x0000000109ba2ee3 chromedriver + 823011
+7   chromedriver                        0x0000000109b73be4 chromedriver + 629732
+8   chromedriver                        0x0000000109b7479e chromedriver + 632734
+9   chromedriver                        0x0000000109f02012 chromedriver + 4358162
+10  chromedriver                        0x0000000109f06c5d chromedriver + 4377693
+11  chromedriver                        0x0000000109f065d3 chromedriver + 4376019
+12  chromedriver                        0x0000000109f06f05 chromedriver + 4378373
+13  chromedriver                        0x0000000109eeba35 chromedriver + 4266549
+14  chromedriver                        0x0000000109f0728d chromedriver + 4379277
+15  chromedriver                        0x0000000109ede080 chromedriver + 4210816
+16  chromedriver                        0x0000000109f24ac8 chromedriver + 4500168
+17  chromedriver                        0x0000000109f24c41 chromedriver + 4500545
+18  chromedriver                        0x0000000109f33aa3 chromedriver + 4561571
+19  libsystem_pthread.dylib             0x00007ff8144c04e1 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff8144bbf6b thread_start + 15
+</msg>
+</errors>
+</robot>
