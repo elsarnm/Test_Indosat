@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.9 on darwin)" generated="2024-03-25T14:49:46.776192" rpa="false" schemaversion="5">
+<suite id="s1" name="Join And Login" source="/Users/queenels/PycharmProjects/Test_Indosat/Automation/test/join_and_login.robot">
+<test id="s1-t1" name="TC01. Verify that the user will be able to see and type to the input field of email" line="27">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-03-25T14:49:47.150714" elapsed="0.000612"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-03-25T14:49:47.152144" elapsed="0.000580"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-25T14:49:47.153444" level="INFO">Starting the test case!</msg>
+<arg>Starting the test case!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-25T14:49:47.153180" elapsed="0.000378"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-25T14:49:47.154390" level="INFO">Opening browser 'chrome' to base url 'https://www.happydayshopping.com/products/account'.</msg>
+<arg>${URL1}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-25T14:49:47.153960" elapsed="16.362764"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-25T14:50:03.518917" elapsed="0.838218"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T14:50:07.358810" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T14:50:04.357818" elapsed="3.001217"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-03-25T14:50:07.820044" level="INFO">Element '//input[@id='ec-signin-email-input']' is displayed.</msg>
+<arg>${INPUT_USERNAME}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-25T14:50:07.359607" elapsed="0.460607"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-25T14:50:07.821137" level="INFO">Typing text 'elsa.sarah25@yahoo.com' into text field '//input[@id='ec-signin-email-input']'.</msg>
+<arg>${INPUT_USERNAME}</arg>
+<arg>${VALID_USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T14:50:07.820662" elapsed="0.972134"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T14:50:11.794748" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T14:50:08.793340" elapsed="3.001644"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-25T14:50:11.795764" elapsed="0.397097"/>
+</kw>
+<doc>The user can see and input email in the field email</doc>
+<tag>Positive Test Case</tag>
+<status status="PASS" start="2024-03-25T14:49:47.148324" elapsed="25.045438"/>
+</test>
+<test id="s1-t2" name="TC02. Verify that the user will be able to input their email to login page and click login button" line="49">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-03-25T14:50:12.196876" elapsed="0.000731"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-03-25T14:50:12.198148" elapsed="0.000735"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-25T14:50:12.200524" level="INFO">Starting the test case!</msg>
+<arg>Starting the test case!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-25T14:50:12.200036" elapsed="0.000653"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-25T14:50:12.201966" level="INFO">Opening browser 'chrome' to base url 'https://www.happydayshopping.com/products/account'.</msg>
+<arg>${URL1}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-25T14:50:12.201279" elapsed="9.763127"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-25T14:50:21.965545" elapsed="1.309779"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T14:50:26.277519" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T14:50:23.275989" elapsed="3.001689"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-25T14:50:26.278679" level="INFO">Typing text 'elsa.sarah25@yahoo.com' into text field '//input[@id='ec-signin-email-input']'.</msg>
+<arg>${INPUT_USERNAME}</arg>
+<arg>${VALID_USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T14:50:26.278087" elapsed="0.998586"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T14:50:30.277653" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T14:50:27.277135" elapsed="3.000812"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-25T14:50:30.280042" level="INFO">Clicking button '//button[@class='form-control__button form-control__button--icon-center']'.</msg>
+<arg>${LOGIN_BTN}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T14:50:30.278871" elapsed="1.157801"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T14:50:34.439725" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T14:50:31.437761" elapsed="3.002180"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-25T14:50:34.440449" elapsed="0.365520"/>
+</kw>
+<doc>Make sure the user can click Get Sign-in Link</doc>
+<tag>Positive Test Case</tag>
+<status status="PASS" start="2024-03-25T14:50:12.195229" elapsed="22.611151"/>
+</test>
+<test id="s1-t3" name="TC03. Verify that the user will be able to input their email to login page and pressing Enter key" line="72">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-03-25T14:50:34.807608" elapsed="0.000433"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-03-25T14:50:34.808475" elapsed="0.000348"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-25T14:50:34.809422" level="INFO">Starting the test case!</msg>
+<arg>Starting the test case!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-25T14:50:34.809167" elapsed="0.000343"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-25T14:50:34.810174" level="INFO">Opening browser 'chrome' to base url 'https://www.happydayshopping.com/products/account'.</msg>
+<arg>${URL1}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-25T14:50:34.809825" elapsed="13.671378"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-25T14:50:48.485057" elapsed="0.628919"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T14:50:52.117857" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T14:50:49.114680" elapsed="3.003373"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-25T14:50:52.119074" level="INFO">Typing text 'elsa.sarah25@yahoo.com' into text field '//input[@id='ec-signin-email-input']'.</msg>
+<arg>${INPUT_USERNAME}</arg>
+<arg>${VALID_USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T14:50:52.118453" elapsed="1.059622"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T14:50:56.179457" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T14:50:53.178620" elapsed="3.000990"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-03-25T14:50:56.180687" level="INFO">Sending key(s) ('[RETURN]',) to //button[@class='form-control__button form-control__button--icon-center'] element.</msg>
+<msg time="2024-03-25T14:50:56.899617" level="INFO">Sending keys [RETURN]</msg>
+<arg>${LOGIN_BTN}</arg>
+<arg>[RETURN]</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-03-25T14:50:56.180004" elapsed="0.960868"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T14:51:00.143630" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T14:50:57.141650" elapsed="3.002557"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-25T14:51:00.144798" elapsed="0.337555"/>
+</kw>
+<doc>Make sure the user can access Get Sing-in Link by hit Enter on keyboard</doc>
+<tag>Positive Test Case</tag>
+<status status="PASS" start="2024-03-25T14:50:34.806845" elapsed="25.676182"/>
+</test>
+<test id="s1-t4" name="TC04. Verify the success of sending login link to email should be displayed" line="95">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-03-25T14:51:00.485008" elapsed="0.000887"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-03-25T14:51:00.486679" elapsed="0.000570"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-25T14:51:00.488055" level="INFO">Starting the test case!</msg>
+<arg>Starting the test case!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-25T14:51:00.487697" elapsed="0.000506"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-25T14:51:00.489304" level="INFO">Opening browser 'chrome' to base url 'https://www.happydayshopping.com/products/account'.</msg>
+<arg>${URL1}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-25T14:51:00.488733" elapsed="11.430008"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-25T14:51:11.920725" elapsed="1.068969"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T14:51:15.992327" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T14:51:12.990618" elapsed="3.001940"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-25T14:51:15.993963" level="INFO">Typing text 'elsa.sarah25@yahoo.com' into text field '//input[@id='ec-signin-email-input']'.</msg>
+<arg>${INPUT_USERNAME}</arg>
+<arg>${VALID_USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T14:51:15.993069" elapsed="1.116187"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T14:51:20.110965" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T14:51:17.109891" elapsed="3.001393"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-25T14:51:20.112364" level="INFO">Clicking button '//button[@class='form-control__button form-control__button--icon-center']'.</msg>
+<arg>${LOGIN_BTN}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T14:51:20.111812" elapsed="1.213326"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T14:51:24.326917" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T14:51:21.325887" elapsed="3.001253"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-03-25T14:51:24.770710" level="INFO">Element '//div[@class='ec-notice__message']' is displayed.</msg>
+<arg>${NOTIF1}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-25T14:51:24.327669" elapsed="0.443767"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T14:51:27.773453" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T14:51:24.771897" elapsed="3.001704"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-25T14:51:27.774018" elapsed="0.342062"/>
+</kw>
+<doc>Make sure notif of the success sending sign-in link to the user's email be displayed</doc>
+<tag>Positive Test Case</tag>
+<status status="PASS" start="2024-03-25T14:51:00.483781" elapsed="27.632695"/>
+</test>
+<test id="s1-t5" name="TC05. Verify the error message should display after leaving the email field blank" line="120">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-03-25T14:51:28.118127" elapsed="0.000606"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-03-25T14:51:28.119189" elapsed="0.000652"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-25T14:51:28.120779" level="INFO">Starting the test case!</msg>
+<arg>Starting the test case!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-25T14:51:28.120378" elapsed="0.000568"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-25T14:51:28.122113" level="INFO">Opening browser 'chrome' to base url 'https://www.happydayshopping.com/products/account'.</msg>
+<arg>${URL1}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-25T14:51:28.121516" elapsed="10.861612"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-25T14:51:38.984459" elapsed="0.852925"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T14:51:42.840945" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T14:51:39.838146" elapsed="3.003208"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-25T14:51:42.843376" level="INFO">Clicking button '//button[@class='form-control__button form-control__button--icon-center']'.</msg>
+<arg>${LOGIN_BTN}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T14:51:42.842315" elapsed="1.359017"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-03-25T14:51:44.681382" level="INFO">Element '//div[@id='ec-signin-email-input-msg']' is displayed.</msg>
+<arg>${NOTIF2}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-25T14:51:44.202722" elapsed="0.478997"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T14:51:47.684203" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T14:51:44.682846" elapsed="3.001536"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-25T14:51:47.684789" elapsed="0.369950"/>
+</kw>
+<doc>The error message should be displayed when input email is empty</doc>
+<tag>Negative Test Case</tag>
+<status status="PASS" start="2024-03-25T14:51:28.116950" elapsed="19.938228"/>
+</test>
+<test id="s1-t6" name="TC06. Verify if the user can input an email without a valid email extension behind it" line="142">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-03-25T14:51:48.056706" elapsed="0.000743"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-03-25T14:51:48.057858" elapsed="0.000357"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-25T14:51:48.058727" level="INFO">Starting the test case!</msg>
+<arg>Starting the test case!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-25T14:51:48.058508" elapsed="0.000309"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-25T14:51:48.059484" level="INFO">Opening browser 'chrome' to base url 'https://www.happydayshopping.com/products/account'.</msg>
+<arg>${URL1}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-25T14:51:48.059127" elapsed="11.863014"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-25T14:51:59.923435" elapsed="0.632355"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T14:52:03.557036" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T14:52:00.556348" elapsed="3.000895"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-25T14:52:03.558208" level="INFO">Typing text 'elsa.sarah25' into text field '//input[@id='ec-signin-email-input']'.</msg>
+<arg>${INPUT_USERNAME}</arg>
+<arg>${INVALID_USERAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T14:52:03.557652" elapsed="0.982417"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T14:52:07.541353" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T14:52:04.540782" elapsed="3.000906"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-25T14:52:07.542811" level="INFO">Clicking button '//button[@class='form-control__button form-control__button--icon-center']'.</msg>
+<arg>${LOGIN_BTN}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T14:52:07.542266" elapsed="1.279373"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T14:52:11.822912" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T14:52:08.822057" elapsed="3.001067"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-25T14:52:11.823711" elapsed="0.341532"/>
+</kw>
+<doc>The error message should be displayed when input email not match the credential</doc>
+<tag>Edge Test Case</tag>
+<status status="PASS" start="2024-03-25T14:51:48.055925" elapsed="24.109912"/>
+</test>
+<test id="s1-t7" name="TC07. Verify if the user can input the extension of the email without an email name" line="165">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-03-25T14:52:12.168270" elapsed="0.000653"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-03-25T14:52:12.169246" elapsed="0.000600"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-25T14:52:12.170837" level="INFO">Starting the test case!</msg>
+<arg>Starting the test case!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-25T14:52:12.170343" elapsed="0.000654"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-25T14:52:12.172180" level="INFO">Opening browser 'chrome' to base url 'https://www.happydayshopping.com/products/account'.</msg>
+<arg>${URL1}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-25T14:52:12.171575" elapsed="3.935965"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-25T14:52:16.108450" elapsed="8.101027"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T14:52:27.211297" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T14:52:24.210077" elapsed="3.001693"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-25T14:52:27.214600" level="INFO">Typing text '@yahoo.com' into text field '//input[@id='ec-signin-email-input']'.</msg>
+<arg>${INPUT_USERNAME}</arg>
+<arg>${INVALID_USERAME2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T14:52:27.213300" elapsed="0.875625"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T14:52:31.090316" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T14:52:28.089323" elapsed="3.001217"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-25T14:52:31.091424" level="INFO">Clicking button '//button[@class='form-control__button form-control__button--icon-center']'.</msg>
+<arg>${LOGIN_BTN}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T14:52:31.091001" elapsed="1.176007"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-25T14:52:35.269895" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-25T14:52:32.268825" elapsed="3.001218"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-25T14:52:35.270441" elapsed="0.338707"/>
+</kw>
+<doc>The error message should be displayed when input email not match the credential</doc>
+<tag>Edge Test Case</tag>
+<status status="PASS" start="2024-03-25T14:52:12.166899" elapsed="23.442795"/>
+</test>
+<doc>This is some basic info about the whole suite</doc>
+<status status="PASS" start="2024-03-25T14:49:46.778820" elapsed="168.832457"/>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0" skip="0">Edge Test Case</stat>
+<stat pass="1" fail="0" skip="0">Negative Test Case</stat>
+<stat pass="4" fail="0" skip="0">Positive Test Case</stat>
+</tag>
+<suite>
+<stat pass="7" fail="0" skip="0" id="s1" name="Join And Login">Join And Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

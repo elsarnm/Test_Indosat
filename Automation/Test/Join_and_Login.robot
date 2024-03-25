@@ -4,21 +4,28 @@ Library          SeleniumLibrary
 
 *** Variables ***
 ${URL1}                 https://www.happydayshopping.com/products/account
-${URL2}                 https://mail.yahoo.com/d/folders/1/messages/49227?guce_referrer=aHR0cHM6Ly9sb2dpbi55YWhvby5jb20v&guce_referrer_sig=AQAAADuDVy05XMlqgbNHQRJAsRufL7VBUEGMw-aWXUx0jLz0Qa6xygyvGy8f6bDKyZ1rFL3d8vbabXRcv7HY-whPPi_RaYycNErqMx7gMSwZekHpKyf-LEPZtFrL7IwYMdurkf8irdo5Ib_MSZPeq_8zYE1HJbSBLDbyKdY2gNeodUvm
+${URL2}                 https://login.yahoo.com/?.intl=id&.lang=id-ID&src=ym&activity=mail-direct&pspid=159600001&done=https%3A%2F%2Fmail.yahoo.com%2Fd%2F%3Freason%3Dinvalid_cred&add=1
 ${URL3}                 https://www.happydayshopping.com/products/account?key=LqA6SfNfpB0u&returnUrl=account
-${VALID_USERNAME}       sarah_sasa17@yahoo.com
-${INVALID_USERAME}      sarah_sasa17
+${VALID_USERNAME}       elsa.sarah25@yahoo.com
+${VALID_PASSWORD}       Sakithati2!
+${INVALID_USERAME}      elsa.sarah25
 ${INVALID_USERAME2}     @yahoo.com
 ${INPUT_USERNAME}       //input[@id='ec-signin-email-input']
+${INPUT_YAHOO_MAIL}     //input[@id='login-username']
+${INPUT_YAHOO_PASS}     //input[@id='login-passwd']
 ${LOGIN_BTN}            //button[@class='form-control__button form-control__button--icon-center']
 ${LOGIN_LINK}           //td[@valign='top']//div//a[@rel='nofollow noopener noreferrer']
+${BUTTON_YAHOO_EMAIL}   //input[@id='login-signin']
+${BUTTON_YAHOO_PASS}    //button[@id='login-signin']
 ${NOTIF1}               //div[@class='ec-notice__message']
 ${NOTIF2}               //div[@id='ec-signin-email-input-msg']
-
+${MENU_NOTREAD}         //a[@aria-label='Belum dibaca, dipilih - Menampilkan email yang belum dibaca']
+${MENU_READEMAIL}       (//a[contains(@aria-label,'')])[37]
+${CHECKBOX1}            //*[@id="recaptcha-anchor"]/div[1]
 
 *** Test Cases ***
 TC01. Verify that the user will be able to see and type to the input field of email
-    [Documentation]                 This is the login with a valid email
+    [Documentation]                 The user can see and input email in the field email
     [Tags]                          Positive Test Case
 
     #Initialize Selenium
@@ -40,7 +47,7 @@ TC01. Verify that the user will be able to see and type to the input field of em
     close browser
 
 TC02. Verify that the user will be able to input their email to login page and click login button
-    [Documentation]                 This is the login with a valid email
+    [Documentation]                 Make sure the user can click Get Sign-in Link
     [Tags]                          Positive Test Case
 
     #Initialize Selenium
@@ -63,7 +70,7 @@ TC02. Verify that the user will be able to input their email to login page and c
     close browser
 
 TC03. Verify that the user will be able to input their email to login page and pressing Enter key
-    [Documentation]                 This is the login with a valid email
+    [Documentation]                 Make sure the user can access Get Sing-in Link by hit Enter on keyboard
     [Tags]                          Positive Test Case
 
     #Initialize Selenium
@@ -86,7 +93,7 @@ TC03. Verify that the user will be able to input their email to login page and p
     close browser
 
 TC04. Verify the success of sending login link to email should be displayed
-    [Documentation]                 This is the login with a valid email
+    [Documentation]                 Make sure notif of the success sending sign-in link to the user's email be displayed
     [Tags]                          Positive Test Case
 
     #Initialize Selenium
@@ -111,7 +118,7 @@ TC04. Verify the success of sending login link to email should be displayed
     close browser
 
 TC05. Verify the error message should display after leaving the email field blank
-    [Documentation]                 This is the login with a valid email
+    [Documentation]                 The error message should be displayed when input email is empty
     [Tags]                          Negative Test Case
 
     #Initialize Selenium
@@ -133,7 +140,7 @@ TC05. Verify the error message should display after leaving the email field blan
     close browser
 
 TC06. Verify if the user can input an email without a valid email extension behind it
-    [Documentation]                 This is the login with a valid email
+    [Documentation]                 The error message should be displayed when input email not match the credential
     [Tags]                          Edge Test Case
 
     #Initialize Selenium
@@ -156,7 +163,7 @@ TC06. Verify if the user can input an email without a valid email extension behi
     close browser
 
 TC07. Verify if the user can input the extension of the email without an email name
-    [Documentation]                 This is the login with a valid email
+    [Documentation]                 The error message should be displayed when input email not match the credential
     [Tags]                          Edge Test Case
 
     #Initialize Selenium
