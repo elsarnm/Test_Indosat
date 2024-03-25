@@ -1,7 +1,7 @@
 # Test_Indosat
 This is the answer to the test given by the Indosat Company
 
-Here are the steps for installation:
+This test uses the Selenium Robot Framework. Here are the steps for installation:
 
 1. Install Python (https://www.python.org/downloads/) and choose the type according to your laptop
 2. install Pip (python get-pip.py / python -m pip install --upgrade pip)
