@@ -256,7 +256,7 @@ TC07. Verify the qty of selected products is clearly shown or not and can change
 #    sleep                       5s
 #    close browser
 #
-#TC09. Verify if the user has input invalid promo coupon
+#TC09. Verify if the user can input invalid promo coupon
 #    [Documentation]         User input invalid promo coupon, error message should be appear
 #    [Tags]                  Negative Test Case
 #
@@ -290,7 +290,7 @@ TC07. Verify the qty of selected products is clearly shown or not and can change
 #    sleep                       5s
 #    close browser
 #
-#TC10. Verify if the user has input an email without a valid email extension behind it
+#TC10. Verify if the user can input an email without a valid email extension behind it
 #    [Documentation]         User input an email without a valid email extension behind it, error message should appear
 #    [Tags]                  Edge Test Case
 #
@@ -321,7 +321,7 @@ TC07. Verify the qty of selected products is clearly shown or not and can change
 #    sleep                       5s
 #    close browser
 #
-TC11. Verify if the user has input an email without an email name and just the extension behind it
+TC11. Verify if the user can input the extension of the email without an email name
     [Documentation]         User input an email without an email name, error message should appear
     [Tags]                  Edge Test Case
 
